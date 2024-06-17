@@ -31,5 +31,3 @@ let g = f;
 
 let h = [1, 2, 3, 4, 5];
 let i = [...h];
-
-// ** Refference Data Types -> Copy type 3
