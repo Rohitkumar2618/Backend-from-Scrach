@@ -1,1 +1,0 @@
-Hey using fs we create a file and add a data Addend mean append the data usning append property
