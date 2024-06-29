@@ -21,4 +21,16 @@ app.get("*", function (req, res) {
   res.send("Route not found");
 });
 
+// ! Middleware
+// Jiske pass three parameters ho like req,res,next -->agr ye 3 hai to its a middleware'
+// ! ab middleware krta kya hai
+// ? Middleware check & ya kuch add krna ho server ko req send krne se pahle uske liye middleWare use hota hai
+
+// ! SYntax of middleware
+
+app.use(function (req, res, next) {
+  console.log("middleware");
+  next(); // agr middleware complete ho to next middleware use ho
+});
+
 app.listen(3000);
