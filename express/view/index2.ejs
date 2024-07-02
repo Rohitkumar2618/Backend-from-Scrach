@@ -1,4 +1,4 @@
-<!-- Isse hamane jo data submit kiya hai vo url me dikhega -->
+<!--  Issme data url me nhi dikhega kua ki method post kra hai -->
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -9,10 +9,16 @@
   </head>
   <body>
     <!-- Form with GET method to submit data to the /check endpoint -->
-    using get method
-    <form action="/check" method="get">
+    <!-- ! Method change into post -->
+    <form action="/check" method="post">
       <input type="text" placeholder="Enter name" name="name" required />
       <input type="email" placeholder="Enter email" name="email" required />
+      <input
+        type="password"
+        placeholder="Enter email"
+        name="password"
+        required
+      />
       <input type="submit" value="Submit" />
     </form>
   </body>
