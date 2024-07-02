@@ -3,11 +3,15 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title><%= title %></title>
+    <!-- Dynamic title using EJS -->
   </head>
   <body>
-    <!-- ! way of writing ejs -->
-
-    <h1><%= 35+5%></h1>
+    <!-- Form with GET method to submit data to the /check endpoint -->
+    <form action="/check" method="get">
+      <input type="text" placeholder="Enter name" name="name" required />
+      <input type="email" placeholder="Enter email" name="email" required />
+      <input type="submit" value="Submit" />
+    </form>
   </body>
 </html>
